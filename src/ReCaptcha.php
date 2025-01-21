@@ -81,7 +81,7 @@ JS;
 	 * Валидация пользовательского токена через гугл.
 	 * @return bool
 	 */
-	public static function validate(): bool
+	public static function validate()
 	{
 		self::reCaptchaConfig();
 
@@ -95,7 +95,7 @@ JS;
 					'response' => $token
 				])
 				->send();
-			if ($response->isOk && ($response->data['success'] ?? false)) {
+            if ($response->isOk && (isset($response->data['success']) ? $response->data['success'] : false)) {
 				return true;
 			}
 		}

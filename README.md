@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist xstreamka/yii2-recaptcha-widget "*"
+php composer.phar require --prefer-dist novseje/yii2-recaptcha-widget "*"
 ```
 
 or add
 
 ```
-"xstreamka/yii2-recaptcha-widget": "*"
+"novseje/yii2-recaptcha-widget": "*"
 ```
 
 to the require section of your `composer.json` file.
